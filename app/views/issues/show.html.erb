@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @issue.project.name rescue '_' %>
+</p>
+
+<p>
+  <b>Subject:</b>
+  <%= @issue.subject %>
+</p>
+
+<p>
+  <b>Opener user:</b>
+  <%= @issue.opener_user.email rescue '_'%>
+</p>
+
+<p>
+  <b>Assingnee user:</b>
+  <%= @issue.assingnee_user.email rescue '_' %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @issue.status.name  rescue '_'%>
+</p>
+
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>

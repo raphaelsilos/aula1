@@ -1,4 +1,10 @@
 Aula1::Application.routes.draw do
+  resources :issues
+
+  resources :projects
+
+  resources :status
+
   get "dashboard" => "dashboard#index"
 
   devise_for :users

@@ -10,6 +10,8 @@ gem "devise"
 gem 'json'
 gem 'rspec'
 gem 'rspec-rails'
+gem 'simple_form'
+gem 'simple-navigation'
 
 # Gems used only for assets and not required
 # in production environments by default.
